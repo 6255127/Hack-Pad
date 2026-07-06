@@ -16,7 +16,8 @@ A custom 3x4 macro keyboard I built from scratch - schematic, PCB, 3D printed ca
 
 Designed in KiCad. Went through a few pin conflicts along the way (accidentally put the LED data line on the I2C bus at one point) before landing on the final wiring.
 
-![schematic here](./images/schematic.png)
+<img width="977" height="693" alt="Screenshot 2026-07-04 172658" src="https://github.com/user-attachments/assets/351f8c2e-f72d-429e-95e0-078201e41b35" />
+
 
 ---
 
@@ -24,7 +25,8 @@ Designed in KiCad. Went through a few pin conflicts along the way (accidentally 
 
 Routed as a 2-layer board - rows on the bottom copper, columns on top, vias where they cross. Ran into a mixed-up switch numbering issue during routing that caused some real weird ratsnest jumps, fixed by re-checking every switch against the row/column table by hand.
 
-![pcb routing here](./images/pcb_routing.png)
+<img width="1086" height="857" alt="Screenshot 2026-07-05 093806" src="https://github.com/user-attachments/assets/77d3fc9f-c99b-4960-9791-2826d26354a2" />
+
 
 ---
 
@@ -32,8 +34,8 @@ Routed as a 2-layer board - rows on the bottom copper, columns on top, vias wher
 
 Modeled in Fusion 360 / Onshape, sandwich-mount style. Bottom half holds the PCB and MCU, top half is the switch plate with cutouts for keycaps, the encoder, and the OLED window. Top plate designed to be printed in clear/frosted material so the LEDs glow through it.
 
-![case bottom here](./images/case_bottom.png)
-![case top here](./images/case_top.png)
+<img width="1306" height="715" alt="Screenshot 2026-07-05 164234" src="https://github.com/user-attachments/assets/f625931c-13ea-49a3-9a60-c268f44c9f7b" />
+
 
 ---
 
@@ -41,11 +43,8 @@ Modeled in Fusion 360 / Onshape, sandwich-mount style. Bottom half holds the PCB
 
 Written in Arduino for the Nano RP2040 Connect. Handles matrix scanning, encoder input, LED feedback, OLED display, and layer switching (numpad vs shortcuts) via the encoder click.
 
-![firmware demo here](./images/firmware_demo.png)
+<img width="747" height="447" alt="Screenshot 2026-07-06 135348" src="https://github.com/user-attachments/assets/ba786280-d1d8-4b52-bbcb-2e4287d1916e" />
 
-```
-firmware/hackpad_firmware_v4.ino
-```
 
 ---
 
