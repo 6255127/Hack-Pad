@@ -1,0 +1,12 @@
+Ref,Part,Qty
+A1,Arduino Nano RP2040 Connect,1
+SW1-SW12,MX style mechanical switch,12
+D1-D12,1N4148 diode (through hole),12
+ENC1,EC11 rotary encoder,1
+U1,0.91in SSD1306 OLED I2C,1
+LED1-LED12,SK6812 MINI-E,12
+R1-R2,4.7k ohm resistor,2
+future upgrade,LiPo battery 3.7V,1
+future upgrade,TP4056 charge/boost module,1
+,M3 screws + standoffs,8
+,keycaps (shine-through),12
